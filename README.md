@@ -1,3 +1,23 @@
+基于 9.7.0 版本，添加了几个插件到 docker 镜像中
+
+1. 创建并修改 `user-requirements.txt` 文件:
+    ```
+    mkdocs-glightbox==0.5.2
+    jieba==0.42.1
+    mkdocs-git-revision-date-localized-plugin==1.5.0
+    plantuml-markdown==3.11.1
+    ```
+2. 构建 docker 镜像：
+    ```
+    docker build -t squidfunk/mkdocs-material:9.7.0-y .
+    ```
+3. 导出 docker 镜像（使用 `gzip` 压缩）：
+    ```
+    docker save squidfunk/mkdocs-material:9.7.0-y | gzip > mkdocs-material_9.7.0-y.tar.gz
+    ```
+
+---
+
 <p align="center">
   <a href="https://squidfunk.github.io/mkdocs-material/">
     <img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/logo.svg" width="320" alt="Material for MkDocs">
