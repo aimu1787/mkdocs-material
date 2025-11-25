@@ -2,10 +2,14 @@
 
 1. 创建并修改 `user-requirements.txt` 文件:
     ```
+    mkdocs-minify-plugin==0.8.0
+    mkdocs-redirects==1.2.2
+
     mkdocs-glightbox==0.5.2
     jieba==0.42.1
     mkdocs-git-revision-date-localized-plugin==1.5.0
     plantuml-markdown==3.11.1
+    mkdocs-drawio==1.12.1
     ```
 2. 构建 docker 镜像：
     ```
